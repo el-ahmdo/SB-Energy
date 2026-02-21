@@ -1,5 +1,3 @@
-import { Truck, ShieldCheck, Package, Headphones } from "lucide-react";
-
 const OurServices = () => {
   return (
     <section id="services" className="w-full py-20 px-4 md:px-20">
