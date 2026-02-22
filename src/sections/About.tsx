@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full min-h-[600px] flex flex-col md:flex-row items-center justify-center px-4 md:px-30 py-10 gap-10">
+      className="w-full md:min-h-[600px] flex flex-col md:flex-row items-center justify-center px-4 md:px-30 py-10 gap-10">
       {/* Left Side */}
       <div className="flex-1 flex flex-col gap-6">
         {/* Button */}

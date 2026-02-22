@@ -2,7 +2,7 @@ const Products = () => {
   return (
     <div
       id="products"
-      className="min-h-70 w-full flex md:flex-row flex-col px-2 py-10 justify-between items-center md:px-30 bg-[#333333] text-white gap-10">
+      className="md:min-h-70 w-full flex md:flex-row flex-col px-2 py-10 justify-between items-center md:px-30 bg-[#333333] text-white gap-10">
       <div className="flex-1 w-full border border-[#FFFFFF1A] bg-[#FFFFFF1A] p-4 flex flex-col gap-2 min-h-30 rounded-2xl shadow relative ">
         <p className="text-[30px] font-semibold">1000MT</p>
 

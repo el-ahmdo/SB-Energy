@@ -2,7 +2,7 @@ const Specifications = () => {
   return (
     <div
       id="specifications"
-      className="w-full min-h-120 bg-[#F5F5F5] flex flex-col items-center pb-[100px]   space-y-2.5">
+      className="w-full md:min-h-120 bg-[#F5F5F5] flex flex-col items-center pb-[100px]   space-y-2.5">
       <h2 className=" text-[18px] font-semibold text-[#333333] ">
         Technical Specifications
       </h2>

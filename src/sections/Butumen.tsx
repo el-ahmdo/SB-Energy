@@ -3,7 +3,7 @@ const Butumen = () => {
   return (
     <div
       id="bitumen"
-      className="flex md:flex-row flex-col-reverse p-4   bg-[#F5F5F5] md:pl-0  md:pr-0 md:py-30 ">
+      className="w-full flex md:flex-row flex-col-reverse p-4   bg-[#F5F5F5] md:pl-0  md:pr-0 md:py-30 ">
       <div className="md:w-[60%] space-y-8 w-full flex flex-col  md:pl-30 bg-white py-10  px-2 md:pr-25">
         <div className="self-start px-4 py-2 rounded-full text-[13px] text-[#DB0707] font-semibold bg-[#DB07071A]">
           IN STOCK NOW

@@ -2,7 +2,7 @@ import Nav from "../sections/Nav";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <Nav />
     </div>
   );

@@ -2,7 +2,7 @@ const Mission = () => {
   return (
     <div
       id="mission"
-      className="w-full min-h-60 flex md:flex-row flex-col justify-between bg-[#F5F5F5] items-center  md:px-30 px-2 py-10 gap-10">
+      className="w-full md:min-h-60 flex md:flex-row flex-col justify-between bg-[#F5F5F5] items-center  md:px-30 px-2 py-10 gap-10">
       <div className="flex-1 w-full bg-white flex flex-col p-4 rounded-tl rounded-bl border-l-[2.5px] border-l-[#00BF63] min-h-40  ">
         <div className="flex w-full items-center">
           <div className="w-10 h-10 rounded flex justify-center bg-[#00BF631A] items-center">
