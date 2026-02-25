@@ -9,7 +9,7 @@ const Specifications = () => {
       <p className="text-[14px] font-light text-[#33333399]">
         Standard compliance and application details
       </p>
-      <div className="md:w-[70%] w-full h-[300px] bg-white flex md:flex-row flex-col rounded-2xl ">
+      <div className="md:w-[70%] w-full  bg-white flex md:flex-row flex-col rounded-2xl ">
         <div className="flex-col p-8 w-full flex-1 flex justify-between">
           <h3 className="text-[#004AAD] text-[16px] font-semibold">
             Properties

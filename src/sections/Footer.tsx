@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         {/* Column 2 */}
-        <div className=" justify-self-center text-[#D4D4D4] ">
+        <div className=" md:justify-self-center text-[#D4D4D4] ">
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-3  text-[14px] font-thin">
             <li className=" cursor-pointer">Home</li>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Column 3 */}
-        <div className=" justify-self-center text-[#D4D4D4] ">
+        <div className=" md:justify-self-center text-[#D4D4D4] ">
           <h3 className="text-lg font-semibold mb-4">Our Services</h3>
           <ul className="space-y-3  text-[14px] font-thin">
             <li className=" cursor-pointer">Petroleum Distribution</li>

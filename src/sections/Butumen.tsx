@@ -68,10 +68,10 @@ const Butumen = () => {
           <img
             src="../Assets/bit.png"
             alt=""
-            className="w-[450px] h-[280px] rounded-tl-xl rounded-tr-xl  z-100"
+            className="md:w-[450px] md:h-[280px] w-full rounded-tl-xl rounded-tr-xl  z-10"
           />
-          <div className="w-[450px] bg-black h-20 rounded-bl-xl rounded-br-xl mb-2 p-3 flex flex-col gap-1">
-            <h2 className="text-white text-30px font-semibold ">
+          <div className="md:w-[450px] bg-black h-20 rounded-bl-xl rounded-br-xl mb-2 p-3 flex flex-col gap-1">
+            <h2 className="text-white md:px-0  text-30px font-semibold ">
               1000MT Available
             </h2>
             <p className="font-thin text-[14px] text-white">

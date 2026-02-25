@@ -67,16 +67,20 @@ const About = () => {
       </div>
 
       {/* Right Side */}
-      <div className="flex-1  flex md:flex-row flex-col justify-center items-center gap-4">
+      <div className="flex-1   flex md:flex-row flex-col justify-center items-center gap-4">
         {/* Bottom-left div */}
-        <div
-          className="w-120  md:w-64 h-64 bg-cover bg-center rounded rounded-[8px]  md:mt-30 "
-          style={{ backgroundImage: "url('/Assets/down.png')" }}></div>
+        <img
+          src="/Assets/down.png"
+          alt="Down"
+          className="w-full md:w-64 h-64 object-cover mt-20 rounded-[8px]"
+        />
 
         {/* Top-right div */}
-        <div
-          className="w-120  md:w-64 h-64 bg-cover bg-center rounded-[8px]  md:mb-20"
-          style={{ backgroundImage: "url('/Assets/up.png')" }}></div>
+        <img
+          src="/Assets/up.png"
+          alt="Up"
+          className="w-full md:w-64 h-64 object-cover mb-20 rounded-[8px]"
+        />
       </div>
     </div>
   );

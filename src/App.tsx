@@ -1,5 +1,4 @@
 import "./App.css";
-import Home from "./pages/Home";
 import About from "./sections/About";
 import Butumen from "./sections/Butumen";
 import Footer from "./sections/Footer";
@@ -10,11 +9,12 @@ import OurServices from "./sections/Services";
 import Specifications from "./sections/Specifications";
 import GetInTouch from "./sections/Touch";
 import CommitmentValues from "./sections/Values";
+import Nav from "../src/sections/Nav";
 
 function App() {
   return (
     <>
-      <Home />
+      <Nav />
       <Hero />
       <About />
       <Products />

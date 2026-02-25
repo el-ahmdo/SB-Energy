@@ -1,52 +1,57 @@
+"use client";
 import { useState } from "react";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="w-full min-h-20 bg-white flex px-15 py-3 justify-between items-center   sticky top-0">
-      {/* Logo */}
-      <div className="flex-1">
-        <img src="/Assets/Logo.svg" width="80px" height="40px" alt="Logo" />
-      </div>
+    <nav className=" w-full bg-white sticky top-0 z-100 ">
+      <div className="max-w-7xl mx-auto px-4 md:px-12 py-2 flex items-center justify-between">
+        {/* Logo */}
+        <div>
+          <img
+            src="/Assets/Logo.svg"
+            alt="Logo"
+            width={80}
+            height={40}
+            className="object-contain md:ml-10"
+          />
+        </div>
 
-      {/* Desktop Menu */}
-      <div className="flex-1 hidden md:flex justify-start items-center gap-20">
-        <ul className="flex gap-4 text-[#333333] text-[16px] font-light cursor-pointer">
-          <a href="#">
-            {" "}
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            {" "}
-            <li>About</li>
-          </a>
-          <a href="#services">
-            <li>Services</li>
-          </a>
-          <a href="#bitumen">
-            <li>Stock</li>
-          </a>
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-8 md:mr-10">
+          <ul className="flex items-center gap-6 text-[#333] text-[16px] font-light">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#bitumen">Stock</a>
+            </li>
+            <li>
+              <a href="#touch">Contact</a>
+            </li>
+          </ul>
+
           <a href="#touch">
-            <li>Contact</li>
+            <button className="px-4 py-2 rounded-md bg-[#00BF63] text-white text-sm hover:opacity-90 transition">
+              Get Quote
+            </button>
           </a>
-        </ul>
-        <a href="#touch">
-          <button className="px-4 py-2 rounded-[5px] cursor-pointer bg-[#00BF63] text-white font-light text-[16px]">
-            Get Qoute
-          </button>
-        </a>
-      </div>
+        </div>
 
-      {/* Mobile Hamburger */}
-      <div className="flex-1 flex justify-end md:hidden">
-        <button onClick={() => setIsOpen(!isOpen)}>
+        {/* Mobile Button */}
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
           <svg
             className="w-6 h-6 text-gray-800"
             fill="none"
             stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
+            viewBox="0 0 24 24">
             {isOpen ? (
               <path
                 strokeLinecap="round"
@@ -68,30 +73,33 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute p-2 top-full left-0 w-full bg-white flex flex-col items-center py-4 gap-4 md:hidden z-50">
-          <ul className="flex  w-full flex-col gap-4 text-[#333333] text-[16px] font-light cursor-pointer">
-            <a href="#">
-              <li>Home</li>
+        <div className="md:hidden bg-white border-t">
+          <div className="px-4 py-4 flex flex-col gap-4 text-[#333] text-[16px] font-light">
+            <a href="#" onClick={() => setIsOpen(false)}>
+              Home
             </a>
-            <a href="#about">
-              <li>About</li>
+            <a href="#about" onClick={() => setIsOpen(false)}>
+              About
             </a>
-            <a href="#services">
-              <li>Services</li>
+            <a href="#services" onClick={() => setIsOpen(false)}>
+              Services
             </a>
-            <li>Sustainability</li>
-            <a href="#touch">
-              <li>Contact</li>
+            <a href="#bitumen" onClick={() => setIsOpen(false)}>
+              Stock
             </a>
-          </ul>
-          <a href="#touch">
-            <button className="px-4 py-2 w-full rounded-[5px] bg-[#00BF63] text-white font-light text-[16px]">
-              Get Qoute
-            </button>
-          </a>
+            <a href="#touch" onClick={() => setIsOpen(false)}>
+              Contact
+            </a>
+
+            <a href="#touch" onClick={() => setIsOpen(false)}>
+              <button className="w-full mt-2 px-4 py-2 rounded-md bg-[#00BF63] text-white text-sm">
+                Get Quote
+              </button>
+            </a>
+          </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 
